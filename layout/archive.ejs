@@ -1,0 +1,16 @@
+<div class="archive-main-container">
+    <div class="archive">
+        <% let lastyear; %>
+        <% site.posts.sort("date").reverse().each(function(post){ %>
+            <% let year = post.date.year() %>
+            <% if(lastyear !== year){ %>
+                <h2 class="year"><%= year %></h2><hr>
+                <% lastyear = year %>
+            <% } %>
+            <div class="archive-item" onclick="location.href='<%- url_for(post.path) %>'">
+                <span class="date"><%= post.date.format('MM-DD') %></span>
+                <span class="title" ><%= post.title %></span>
+            </div>
+        <% }) %>
+    </div>
+</div>

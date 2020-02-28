@@ -1,0 +1,58 @@
+.archive-main-container{
+	margin: 12vw 11vw;  
+	padding: 2vw 6vw 6vw 6vw; 
+    
+    background: color-green1;
+    
+    border-top: .75vh solid color-green5;
+    border-radius: 1vw;
+
+    box-shadow: 0.1vw 0.15vw 0.25vw 0.1vw color-shadow;
+    transition: 0.5s;
+
+	&:hover{
+        box-shadow: 0 0 2vw 1vw color-shadow;
+    }
+
+    .year {
+        padding-top: 2vw;
+        font-size: 2.5vw;
+        &:hover{
+            color: color-orange7;
+        }
+    }
+
+    hr {
+		border: 1px solid color-green3;
+        margin-top: -1vw;
+        margin-bottom: 2vw;
+	}
+    
+    .archive-item {
+        padding: .5vw;
+        font-size: 1.7vw;
+
+        transition: 0.5s;
+        border-left: 0 solid color-orange4;
+
+        &:hover{
+            border-left: .5vw solid color-orange4;
+		    border-radius: .4vw;
+            background-color: color-green12-5;
+            .title {
+                color: color-orange8;
+                font-weight: bold;
+            }
+        }
+
+        .date {
+            color: color-green8;
+            padding: 0 2vw 0 4vw;
+        }
+
+        .title {
+            color: color-font;
+            transition: 0.5s;
+        }
+    }
+}

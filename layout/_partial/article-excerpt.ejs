@@ -1,0 +1,16 @@
+<article class="post">
+    <%- partial('_partial/article-header') %>
+
+    <div class="post-content">
+        <div onclick="location.href='<%- config.root %><%- item.path %>' ">
+            <%- item.excerpt %>
+        </div>
+    </div>
+
+    <p class="readmore">
+        <a href="<%- config.root%><%- item.path %>">
+            <%= __('Readmore.Text') %>
+        </a>
+    </p>
+
+</article>

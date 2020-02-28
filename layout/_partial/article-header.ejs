@@ -1,0 +1,51 @@
+<div class="post-header">
+    <h1 class="post-title">
+        <a class="post-title-link" href="<%- config.root %><%- item.path %>">
+            <%- item.title %>
+        </a>
+    </h1>
+
+    <div class="post-info">
+
+        <span class="post-date">
+            <i class="iconfont icon-calendar"></i>
+            <%- date(item.date, "YYYY-MM-DD") %>
+        </span>
+
+        <span class="post-words">
+            <i class="iconfont icon-write"></i>
+            <%= wordcount(item.content) %><%= __('Post-info.Count_unit') %>
+        </span>
+
+        <span class="post-readtime">
+            <i class="iconfont icon-shijian"></i>
+            <%= min2read(item.content) %><%= __('Post-info.Time_unit') %>
+        </span>
+
+    </div>
+
+    <div class="post-belong">
+
+        <div class="post-tags">
+            <i class="iconfont icon-tags"></i>
+            <%  
+                var tags = [];
+                item.tags.forEach(function(tag){
+                tags.push('<a href="' + config.root + tag.path + '"> ' + tag.name + '</a>');
+                });
+            %>
+            <%- tags.join(' ') %>
+        </div>
+
+        <div class="post-categories">
+            <i class="iconfont icon-folderopen"></i>
+            <%  
+                var categories = [];
+                item.categories.forEach(function(category){
+                categories.push('<a href="' + config.root + category.path + '"> ' + category.name + '</a>');
+                });
+            %>
+            <%- categories.join(' / ') %>
+        </div>
+    </div>
+</div>

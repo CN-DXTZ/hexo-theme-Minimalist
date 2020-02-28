@@ -1,0 +1,15 @@
+<div class="footer">
+	<div class="platform">
+		<% for(platform in theme.social_platforms){ %>
+			<% let url = String(theme.social_platforms[platform]); %>
+			<% if(url.length > 5) { %>
+				<a class="iconfont icon-<%= platform %>"  href="<%- url %>" target="_blank"></a>
+			<% } %>				
+		<% } %>
+	</div>
+	
+	<div class="copyright-info">
+			<span>Copyright © 2020 - <%- date(Date.now(), 'YYYY') %></span>
+			<a href="<%- config.root %>">DXTZ</a> 
+	</div>
+</div>

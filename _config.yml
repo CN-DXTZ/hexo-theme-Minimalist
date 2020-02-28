@@ -1,0 +1,29 @@
+# html lang
+language: zh-CN
+
+# Site favicon
+favicon: /images/favicon.ico
+
+# main menu navigation
+menu:
+  Home: /
+  Categories: /categories
+  Archives: /archives
+  Tags:  /tags
+  About: /about
+
+# plugin
+  # npm install -s hexo-wordcount
+  # hexo-renderer-marked 
+    # 修改 node_modules\hexo-renderer-marked\lib\renderer.js
+    # return `<p>${text}</p>\n`; 为 return `${text}\n`;
+
+
+# 社交平台
+social_platforms:
+  gmail: mailto:dengbin1213@gmail.com
+  github: https://github.com/CN-DXTZ
+  zhihu: https://www.zhihu.com/people/DXTZ/
+  qq-email: mailto:2924380441@qq.com
+  bilibili:
+  csdn:

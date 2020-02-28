@@ -1,0 +1,12 @@
+<div class="category-page-container">
+    <div class="category-page-title">
+        <h2 class="category_title"><i class="iconfont icon-folderopen"></i><%= page.category %></h2>
+    </div>
+    <div class="category-page-cards">
+        <% page.posts.each(function(post){ %>
+        <section class="posts">
+            <%- partial('_partial/article-excerpt', { item: post, index: true, pin: false }) %>
+        </section>
+        <% }) %>
+    </div>
+</div>

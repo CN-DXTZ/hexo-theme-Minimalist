@@ -1,0 +1,92 @@
+.header {
+    background: linear-gradient(to right, color-green6, color-green3, color-green6);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // 阴影
+    box-shadow: 0 0 0.5vw 0.3vw color-shadow;
+    transition: 0.5s;
+
+    .blog-title .logo{
+        padding: 4vw;
+        color: white;
+        font-size: 4vw;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .menu {
+        padding-right: 2vw;
+
+
+        .menu-item {
+          display: inline-block;
+
+          .menu-item-link {
+              margin-left: 1vw;
+              color: white;
+              font-size: 2vw;
+              font-weight: bold;
+              text-decoration: none;
+              transition: 0.5s;
+
+              position: relative;
+
+              &:hover{
+                color: color-orange9;
+              }
+
+              // 动态下划线 https://blog.csdn.net/csu_passer/article/details/79597014
+              &::after{
+                  content: '';
+
+                  position: absolute;
+                  top: 110%;
+                  left: 0;
+
+                  width: 100%;
+                  height: .35vh;
+
+                  background-color: color-orange9;
+                  transform: scale(0);
+                  transition: 0.3s;
+                  transform-origin: center;
+              }
+              &:hover::after{
+                  transform: scale(1);
+              }
+          }
+        }
+    }
+}
+
+.header-fixed{
+    background: rgba(color-green1, 0.25);
+    
+    position: fixed;
+
+    height: 3vw;
+
+    .blog-title .logo{
+        color: color-font;
+        font-size: 2vw;
+    }
+
+    .menu {
+        padding-right: 1vw;
+      
+        .menu-item .menu-item-link{
+            color: color-font;
+            font-size: 1.5vw;
+            margin-left: 0.2vw;
+        }
+    }
+}

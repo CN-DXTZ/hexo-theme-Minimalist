@@ -1,0 +1,113 @@
+.categories-main-container{
+	margin: 12vw 11vw;  
+	padding: 5vw 4vw; 
+    
+    background: color-green1;
+    
+    border-top: .75vh solid color-green5;
+    border-radius: 1vw;
+
+    box-shadow: 0.1vw 0.15vw 0.25vw 0.1vw color-shadow;
+    transition: 0.5s;
+
+	&:hover{
+        box-shadow: 0 0 2vw 1vw color-shadow;
+    }
+
+	.category-deep-1 {
+		.category-item {
+			padding: .5vw 0;
+			font-size: 1.7vw;
+			transition: 0.5s;
+			border-left: 0 solid color-orange4;
+			&:hover{
+				border-left: .5vw solid color-orange4;
+				border-radius: .4vw;
+				background-color: color-green12-5;
+				.name {
+					color: color-orange8;
+					font-weight: bold;
+					&::before{
+						color: color-orange7;
+					}
+				}
+        	}
+		}
+
+		.category-item .name{
+			padding-left: 1.7vw;
+			&::before {
+				content:"\e75b"; 
+				font-family: "iconfont" !important;
+				color: color-green5;
+				font-weight: bold;
+				font-size: 1.7vw;
+				position: relative;
+				right: .5vw; // 抵消掉 border-left
+			}
+		}
+
+		.category-deep-2 {
+			.category-item .name{
+				padding-left: 3.4vw;
+				&::before {
+					content:"\e7c2";
+				}
+			}
+			.category-deep-3 {
+				.category-item .name{
+					padding-left: 5.1vw;
+					&::before {
+						content:"\e63e";
+					}
+				}
+				.category-deep-4 {
+					.category-item .name{
+						padding-left: 6.8vw;
+						&::before {
+							content:"\e63c";
+						}
+					}
+					.category-deep-5 .category-item .name{
+						padding-left: 8.5vw;
+						&::before{
+							font-weight: normal;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.name{
+		color: color-font;
+		transition: 0.5s;
+	}
+
+	.count{
+		color: color-green8;
+	}
+}
+
+// 目录子页面
+.category-page-container{
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+
+	.category-page-title{
+		padding-top: 9vw; 
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+		.category_title{
+			color: color-fonts;
+			font-size: 2.5vw;	
+		}
+		.iconfont {
+			font-size: 2.3vw;	
+			margin-right: .5vw; 
+		}
+	}	
+}

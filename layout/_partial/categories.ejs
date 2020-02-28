@@ -1,0 +1,22 @@
+<div class="categories-main-container">
+	<div class="categories">
+		<% let roots= new Array("categories/"); %> 
+		<% site.categories.sort("path").each(function(item){ %>
+
+			<!-- 依次返回上一级目录直至根目录相同 -->
+			<% while(item.path.search(roots[roots.length-1])==-1) {%>
+				<% roots.pop(); %>
+				</div>
+			<% } %>
+			
+			<!-- 添加新目录 -->
+			<% roots.push(item.path); %>
+			<div class="category-deep-<%= roots.length-1 %>">
+				<div class="category-item" onclick="location.href='<%- config.root %><%= item.path %>'">
+					<span class="name"><%= item.name %></span>
+					<span class="count">&nbsp(<%= item.posts.length %>)&nbsp</span>
+				</div>
+
+		<% }); %>
+	</div>
+</div>

@@ -1,0 +1,51 @@
+@import "_partial/_variables";
+
+html,body {
+	background-color: color-green01;
+	color color-font;
+	font-size: 1.4vw ;
+	line-height: 1.5; 
+	min-height: 100vh;
+	display: flex;
+  	flex-direction: column;
+	margin: 0;
+}
+.main{
+	flex: 1;
+}
+
+// 被选中
+::selection{
+  	background-color: color-green3;
+	// color: color-orange9;
+}
+
+// 滚动条
+::-webkit-scrollbar
+{
+	width: 0.6vw; 
+  	height: 0.6vw; 
+}
+::-webkit-scrollbar-track
+{	
+	background-color: color-green01;
+}
+::-webkit-scrollbar-thumb
+{
+	background-color: color-green6;
+}
+
+
+@import "_partial/header";
+@import "_partial/post";
+@import "_partial/post-header";
+@import "_partial/post-content";
+@import "_partial/post-excerpt";
+@import "_partial/post-full";
+@import "_partial/archive";
+@import "_partial/categories";
+@import "_partial/tags";
+@import "_partial/about";
+@import "_partial/paginator";
+@import "_partial/footer";
+  

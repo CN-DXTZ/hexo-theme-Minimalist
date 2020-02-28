@@ -1,0 +1,39 @@
+Menu:
+  Home: Home
+  Categories: Categories
+  Archives: Archives
+  Tags: Tags
+  About: About
+
+Readmore:
+  Text: Read More
+
+paginator:
+  prev: prev
+  next: next
+
+Post-info:
+  Date: Date
+  Tags: Tags 
+  Time: Time
+  Time_unit: mins
+  Count: Count
+  Count_unit: words
+
+
+Catalog-info:
+  Text: Article Catalog
+
+toTop-info:
+  Text: To the Top  
+
+Tag-info:
+  Text:  tags in total
+
+Posts-info:
+  Text1: Wow!
+  Text2:  posts in total  
+
+Categories-info:
+  Text: categories in total 
+
