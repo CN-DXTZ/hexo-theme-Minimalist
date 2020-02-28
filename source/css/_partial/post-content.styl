@@ -2,6 +2,7 @@
 .posts .post .post-content{
     margin: 1vw 0;
     padding: 1vw 0;
+	width: 100%;
 
 	//  链接
 	a {
@@ -189,26 +190,35 @@
 
 	// 块引用
 	blockquote {
-		padding: .1vw .8vw;
-		margin-left:0;
+		margin-inline-start: 0.7vw;
+		padding: 0 0 0 0.7vw;
 		width: 96%;
 		border-left: .4vw solid color-green5;
 		border-radius: .4vw;
-		background-color: color-green12-6;
+		background-color: color-green12-4;
 		list-style: none;
-		word-break: break-all;
+
+		p {
+			padding: 0.7vw 0 0 0;
+		}
+
+		>ul, >ol {
+			margin-block-start: -1vw;
+		}
 
 		blockquote {
+			// 清除浏览器css
+			margin-block-start: -1vw;
 			border-left: .4vw solid color-green4;
-			background-color: color-green12-4;
+			background-color: color-green12-2;
 		
 			blockquote {
 				border-left: .4vw solid color-green3;
-				background-color: color-green12-2;
+				background-color: color-green1;
 
 				blockquote {
 					border-left: .4vw solid color-green2;
-					background-color: color-green1;
+					background-color: color-green01-6;
 				}
 			}
 		}
