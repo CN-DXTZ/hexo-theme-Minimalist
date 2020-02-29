@@ -7,12 +7,15 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
  */
 
  /********************** 修改 **********************/
-/* 不超宽溢出： 在 css / Code blocks / 内添加 width */
-/* 复制提示改为中文： 在 js 修改 t.textContent= "copy"为"复制"，"copied"为"复制完了" */
-/* 在 replace(/\s+/g," ")+" language-"+t 后 添加：
-		+" line-numbers" 	添加行号
-		+" match-braces" 	括号匹配*/
+/* CSS: */
+/* 1. 不超宽溢出： 在注释 / Code blocks / 下内添加 max-width: 100%; */
+/* JAVASCRIPT */
+/* 1. 复制提示改为中文： 在 js 修改 t.textContent= "copy"为"复制"，"copied"为"复制完了" */
+/* 2. 在 replace(/\s+/g," ")+" language-"+t 后 添加：
+		第一个是<code>：+" match-braces" 	括号匹配
+		第二个是<pre>：+" line-numbers" 	添加行号*/
 
+		
 code[class*="language-"],
 pre[class*="language-"] {
 	color: #ccc;
@@ -41,14 +44,13 @@ pre[class*="language-"] {
 pre[class*="language-"] {
 	padding: 1em;
 	margin: .5em 0;
-	width: 54vw;
+	max-width: 100%;
 	overflow: auto;
 }
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
 	background: #2d2d2d;
-	border-radius: .5vw;
 }
 
 /* Inline code */
