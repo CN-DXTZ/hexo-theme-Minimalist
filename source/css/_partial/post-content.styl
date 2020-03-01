@@ -1,7 +1,6 @@
 // post内容，即markdown渲染
 .posts .post .post-content{
     margin: 1vw 0;
-    padding: 1vw 0;
 	width: 100%;
 
 	//  链接
@@ -199,7 +198,7 @@
 		list-style: none;
 
 		p {
-			padding: 0.7vw 0 0 0;
+			padding: 0.7vw 0 0.5vw 0;
 		}
 
 		>ul, >ol {
@@ -207,8 +206,9 @@
 		}
 
 		blockquote {
-			// 清除浏览器css
-			margin-block-start: -1vw;
+			// 块引用嵌套间距
+			margin-block-start: -1.2vw;
+			margin-block-end: -1.2vw;
 			border-left: .4vw solid color-green4;
 			background-color: color-green12-2;
 		

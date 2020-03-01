@@ -5,6 +5,20 @@
         <%- item.content %>
     </div>
 
-    <!-------------------- 上下篇 -------------------->
-
+    <div class="post-nav">
+        <span class="post-nav-prev">
+            <% if(item.prev){ %>
+            <a href="<%= url_for(item.prev.path) %>" rel="prev" title="<%= item.prev.title %>">
+                <i class="iconfont icon-houtui"></i><%= item.prev.title %>
+            </a>
+            <% } %>
+        </span>
+        <span class="post-nav-next">
+            <% if(item.next){ %>
+            <a href="<%= url_for(item.next.path) %>" rel="next" title="<%= item.next.title %>">
+                <%= item.next.title %><i class="iconfont icon-qianjin"></i>
+            </a>
+            <% } %>
+        </span>
+    </div>
 </article>

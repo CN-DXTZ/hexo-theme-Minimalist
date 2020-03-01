@@ -26,7 +26,7 @@
 
     <div class="post-belong">
 
-        <div class="post-tags">
+        <span class="post-tags">
             <i class="iconfont icon-tags"></i>
             <%  
                 var tags = [];
@@ -35,9 +35,9 @@
                 });
             %>
             <%- tags.join(' ') %>
-        </div>
+        </span>
 
-        <div class="post-categories">
+        <span class="post-categories">
             <i class="iconfont icon-folderopen"></i>
             <%  
                 var categories = [];
@@ -46,6 +46,6 @@
                 });
             %>
             <%- categories.join(' / ') %>
-        </div>
+        </span>
     </div>
 </div>

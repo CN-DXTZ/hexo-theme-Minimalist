@@ -1,0 +1,35 @@
+.posts .post .post-nav {
+    width: 115%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.8vw;
+    padding: 1.7vw 0;
+    border-top: 1px dashed color-green4; 
+
+    a {
+        color: color-green-comp8;
+        font-size: 1.5vw;
+		text-decoration: none;
+        transition: 0.5s;
+		&:hover	{
+			color: color-orange8;
+		}
+        .iconfont {
+            font-size: 1.5vw;
+        }
+	}
+
+	.post-nav-prev a{
+        float: left;
+        &:hover{
+            transform: translate(-1vw, 0);
+        }
+	}
+	.post-nav-next a{
+        float: right;
+        &:hover {
+            transform: translate(1vw, 0);
+        }
+	}
+}

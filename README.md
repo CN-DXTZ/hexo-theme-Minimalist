@@ -2,7 +2,7 @@
 A minimalist style Hexo theme, [Demo](http://cn-dxtz.github.io/)
 
 ## Features
-[screenshot.png](https://raw.githubusercontent.com/CN-DXTZ/hexo-theme-Minimalist/screenshot.png)
+![Minimalist_8.png](https://cdn.jsdelivr.net/gh/CN-DXTZ/Blog-Img-Bed/PicGo/Minimalist_8.png)
 - Pure Color, Navigation bar stays at the top, scrolling becomes hyaline
 - code block highlight:
 - nested blockquote: corresponding level, highlighted at the left end
@@ -48,8 +48,9 @@ npm install -s  hexo-renderer-kramed@0.1.4
   - when you write Markdown, for support some languages which is symbol suffix, like c++, c# ..., you must use the language sign as cpp, csharp... , for details, please refer to the official website
 
 ## More functions to be realized
+- [×] Support display the before and after article
 - [ ] Support TOC
-- [ ] Support display the before and after article
 - [ ] Support click to top or bottom
 - [ ] Support picture full screen
 - [ ] Support the comment plugin
+- [ ] Support the search plugin
