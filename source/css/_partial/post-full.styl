@@ -25,11 +25,45 @@
         &:hover{
             transform: translate(-1vw, 0);
         }
+
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 110%;
+            left: 0;
+            width: 100%;
+            height: .2vh;
+            background-color: color-orange8;
+            transform: scale(0);
+            transition: 0.5s;
+            transform-origin: right;
+        }
+        &:hover::after{
+            transform: scale(1);
+        }
 	}
 	.post-nav-next a{
         float: right;
         &:hover {
             transform: translate(1vw, 0);
+        }
+
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 110%;
+            left: 0;
+            width: 100%;
+            height: .2vh;
+            background-color: color-orange8;
+            transform: scale(0);
+            transition: 0.5s;
+            transform-origin: left;
+        }
+        &:hover::after{
+            transform: scale(1);
         }
 	}
 }

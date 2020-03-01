@@ -51,6 +51,6 @@ npm install -s  hexo-renderer-kramed@0.1.4
 - [×] Support display the before and after article
 - [ ] Support TOC
 - [ ] Support click to top or bottom
-- [ ] Support picture full screen
+- [×] Support picture zoom and preview quickly
 - [ ] Support the comment plugin
 - [ ] Support the search plugin
