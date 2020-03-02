@@ -49,7 +49,7 @@ npm install -s  hexo-renderer-kramed@0.1.4
 
 ## More functions to be realized
 - [×] Support display the before and after article
-- [ ] Support TOC
+- [×] Support TOC
 - [×] Support click to top
 - [×] Support picture zoom and preview quickly
 - [ ] Support the comment plugin

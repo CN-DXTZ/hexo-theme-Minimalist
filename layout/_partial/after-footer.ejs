@@ -1,12 +1,26 @@
-<%- js('js/navbar.js') %>
-<%- js('js/littleCode.js') %>
+<div class="after-footer">
 
-<script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/instantpage-3.0.0.js" type="module"></script>
-<% if(is_home()|| is_archive()|| is_post()){ %>
-    <script src="https://unpkg.com/vanilla-back-to-top@7.2.0/dist/vanilla-back-to-top.min.js"></script>
-    <%- js('js/addBackToTop.js') %>
-<% } %>
-<script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/prism.js" type="module"></script>
-<script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/jquery.fancybox.min.js" type="module"></script>
-<%- js('js/image.js') %>
+    <%- js('js/navbar.js') %>
+
+    <%- js('js/littleCode.js') %>
+
+    <script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/instantpage.min.js"
+        type="module"></script>
+
+    <% if(is_home()|| is_archive()|| is_post()){ %>
+        <script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/vanilla-back-to-top.min.js"></script>
+        <%- js('js/addBackToTop.js') %>
+    <% } %>
+
+    <script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/prism.min.js" type="module"></script>
+
+    <% if(is_post()){ %>
+        <script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/jquery.min.js"></script>
+        <script src="//cdn.jsdelivr.net/gh/CN-DXTZ/CN-DXTZ.github.io/js/third%20party/jquery.fancybox.min.js"
+            type="module"></script>
+        <%- js('js/jquery.fancybox.image.js') %>
+
+        <%- js('js/jquery.toc.js') %>
+    <% } %>
+
+</div>
