@@ -48,9 +48,9 @@ npm install -s  hexo-renderer-kramed@0.1.4
   - when you write Markdown, for support some languages which is symbol suffix, like c++, c# ..., you must use the language sign as cpp, csharp... , for details, please refer to the official website
 
 ## More functions to be realized
-- [×] Support display the before and after article
-- [×] Support TOC
-- [×] Support click to top
-- [×] Support picture zoom and preview quickly
+- [x] Support display the before and after article
+- [x] Support TOC
+- [x] Support click to top
+- [x] Support picture zoom and preview quickly
 - [ ] Support the comment plugin
 - [ ] Support the search plugin
