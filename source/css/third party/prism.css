@@ -12,7 +12,7 @@ https://prismjs.com/download.html#themes=prism-tomorrow&languages=markup+css+cli
 /* JAVASCRIPT */
 /* 1. 复制提示改为中文： 在 js 修改 t.textContent= "copy"为"复制"，"copied"为"复制完了" */
 /* 2. 在 replace(/\s+/g," ")+" language-"+t 后 添加：
-		第一个是<code>：+" match-braces" 	括号匹配
+		第一个是<code>：+" match-braces diff-highlight" 	括号匹配，diff高亮
 		第二个是<pre>：+" line-numbers" 	添加行号*/
 
 		
