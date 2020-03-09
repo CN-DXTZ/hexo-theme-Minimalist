@@ -256,13 +256,25 @@
 		border-collapse: collapse;
 		padding: 1vw;
 		thead{
-			background-color: color-green12-5;
+			background-color: color-green2;
 			font-weight: bold;
 			border-top: .1vw solid color-font;
 			border-bottom: .1vw solid color-font;
+			padding: 3vw 0;
+			
 		}
-		tbody{
-			background-color: color-green12-2;
+		th{
+				padding: 0.3vw 0;
+		}
+		tbody tr{
+			&:nth-child(odd){
+				background-color: color-green12-2;
+			}
+			background-color: color-green12-5;
+		}
+		td{
+			padding: 0.25vw 0;
+			line-height: 1.8vw;
 		}	
 		border-bottom: .1vw solid color-font;
 	}
