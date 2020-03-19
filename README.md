@@ -2,7 +2,7 @@
 A minimalist style Hexo theme, [Demo](http://cn-dxtz.github.io/)
 
 ## Features
-![Minimalist_8.png](https://cdn.jsdelivr.net/gh/CN-DXTZ/Blog-Img-Bed/PicGo/Minimalist_8.png)
+![Minimalist_8.png](Minimalist.png)
 - Pure Color, Navigation bar stays at the top, scrolling becomes hyaline
 - code block highlight:
 - nested blockquote: corresponding level, highlighted at the left end
